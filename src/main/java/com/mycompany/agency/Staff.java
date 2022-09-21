@@ -13,9 +13,12 @@ public class Staff
     public Staff()
     {
         staffList = new StaffMember[6];
-
-        // TODO 1: Add 6 emploees to the staffList
-
+        staffList[0]  = new StaffEmployee("Moaath Alrajab", " 25 New Tree Line", " 516-101-3131", " 000-000-1234", 21900.5);
+        staffList[1]  = new StaffEmployee("Moaath Alrajab", " 25 New Tree Line", " 516-101-3131", " 000-000-1234", 21900.5);
+        staffList[2]  = new StaffEmployee("Moaath Alrajab", " 25 New Tree Line", " 516-101-3131", " 000-000-1234", 21900.5);
+        staffList[2]  = new StaffEmployee("Moaath Alrajab", " 25 New Tree Line", " 516-101-3131", " 000-000-1234", 21900.5);
+        staffList[2]  = new StaffEmployee("Moaath Alrajab", " 25 New Tree Line", " 516-101-3131", " 000-000-1234", 21900.5);
+        
         ((Executive)staffList[0]).awardBonus(500.00);
 
         ((TempEmploee)staffList[3]).addHours(40);
@@ -30,6 +33,7 @@ public class Staff
 
         for (int count=0; count < staffList.length; count++)
         {
+            System.out.println(String.format("Employee - %d", count));
             System.out.println(staffList[count]);
 
             amount = staffList[count].pay();  // polymorphic
