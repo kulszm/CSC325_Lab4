@@ -6,7 +6,7 @@ package com.mycompany.agency;
 
 public class Intern extends StaffEmployee
 {
-    String internName;
+    String internNames;
     String internAddress;
     String internPhone;
     //-----------------------------------------------------------------
@@ -17,7 +17,7 @@ public class Intern extends StaffEmployee
     public Intern(String eName, String eAddress, String ePhone)
     {
      
-        internName = eName;
+        internNames = eName;
         internAddress = eAddress;
        internPhone = ePhone;
         
