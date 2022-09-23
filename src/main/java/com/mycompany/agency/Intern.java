@@ -29,6 +29,7 @@ public class Intern extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-      return 0;
+        double internPay = 0;
+      return internPay;
     }
 }
