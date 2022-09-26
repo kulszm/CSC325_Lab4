@@ -3,7 +3,7 @@ package com.mycompany.agency;
 
 
 // TODO 1: Make this class work and public
- class StaffMember
+public class StaffMember
 {
     protected String name;
     protected String address;
@@ -23,14 +23,22 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     // TODO 2: Returns a string including the basic employee information.
     //-----------------------------------------------------------------
+    @Override
     public String toString()
     {
-
+        String sOutput = "";
+        sOutput += String.format("Name: %s", name) + "/n";
+        sOutput += String.format("Address: %s", address) + "/n";
+        sOutput += String.format("Phone: %s", phone) + "/n";
+        return sOutput;
     }
 
     //-----------------------------------------------------------------
     //  Derived classes must define the pay method for each type of
     //  employee.
     //-----------------------------------------------------------------
-    public abstract double pay();
+    public double pay(){
+        return 0;
+    }
+    
 }
