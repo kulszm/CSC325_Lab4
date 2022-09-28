@@ -27,9 +27,9 @@ public class StaffMember
     public String toString()
     {
         String sOutput = "";
-        sOutput += String.format("Name: %s", name) + "/n";
-        sOutput += String.format("Address: %s", address) + "/n";
-        sOutput += String.format("Phone: %s", phone) + "/n";
+        sOutput += String.format("Name: %s", name) + "\n";
+        sOutput += String.format("Address: %s", address) + "\n";
+        sOutput += String.format("Phone: %s", phone) + "\n";
         return sOutput;
     }
 
