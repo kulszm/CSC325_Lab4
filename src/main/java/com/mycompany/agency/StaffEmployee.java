@@ -28,8 +28,8 @@ public class StaffEmployee extends StaffMember
     public String toString()
     {
         String sOutput = super.toString();
-        sOutput += String.format("Social Security Number: %s", socialSecurityNumber) + "/n";
-        sOutput += String.format("Pay Rate: %s", socialSecurityNumber) + "/n";
+        sOutput += String.format("Social Security Number: %s", socialSecurityNumber) + "\n";
+        sOutput += String.format("Pay Rate: %s", socialSecurityNumber) + "\n";
         return sOutput;
     }
 
