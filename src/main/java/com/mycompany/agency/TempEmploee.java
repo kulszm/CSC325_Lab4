@@ -26,22 +26,24 @@ public class TempEmploee extends StaffEmployee
     //-----------------------------------------------------------------
     public void addHours(int moreHours)
     {
-        
+        hoursWorked += moreHours;
     }
 
     //-----------------------------------------------------------------
     // TODO3: Computes and returns the pay for this hourly employee.
     //-----------------------------------------------------------------
+    @Override
     public double pay()
     {
-
+        return payRate;
     }
 
     //-----------------------------------------------------------------
     // TODO4: Returns information about this hourly employee as a string.
     //-----------------------------------------------------------------
+    @Override
     public String toString()
     {
-
+        return super.toString() + String.format("Hour: %d", hoursWorked);
     }
 }
