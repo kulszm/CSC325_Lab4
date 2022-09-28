@@ -44,6 +44,6 @@ public class TempEmploee extends StaffEmployee
     @Override
     public String toString()
     {
-        return super.toString() + String.format("Hour: %d", hoursWorked);
+        return super.toString() + String.format("Hour: %d\n", hoursWorked);
     }
 }
